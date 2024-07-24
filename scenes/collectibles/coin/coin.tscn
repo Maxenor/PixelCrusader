@@ -1,55 +1,55 @@
 [gd_scene load_steps=21 format=3 uid="uid://pqp5qaw561fr"]
 
-[ext_resource type="Texture2D" uid="uid://bped01tsjeycn" path="res://assets/sprites/coin.png" id="1_hrxtj"]
-[ext_resource type="Script" path="res://scripts/coin.gd" id="1_ix6bn"]
-[ext_resource type="AudioStream" uid="uid://hxv3svfwkg67" path="res://assets/sounds/coin.wav" id="3_ag2jy"]
+[ext_resource type="Script" path="res://scenes/collectibles/coin/coin.gd" id="1_ix6bn"]
+[ext_resource type="Texture2D" uid="uid://bped01tsjeycn" path="res://scenes/collectibles/coin/coin.png" id="2_2kyg5"]
+[ext_resource type="AudioStream" uid="uid://hxv3svfwkg67" path="res://assets/sounds/collectibles/coin.wav" id="3_g6wm2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fm7y"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mbwas"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ex1m6"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2u7hg"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjnp2"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(64, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hvebx"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pwl53"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(96, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jj66p"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(112, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6x2no"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(128, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tba44"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(144, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wxbvu"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(160, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nfuqw"]
-atlas = ExtResource("1_hrxtj")
+atlas = ExtResource("2_2kyg5")
 region = Rect2(176, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i3y1m"]
@@ -209,7 +209,7 @@ autoplay = "default"
 shape = SubResource("CircleShape2D_osao3")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_ag2jy")
+stream = ExtResource("3_g6wm2")
 bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
